@@ -40,3 +40,6 @@ def create(request):
         'form': form
     }
     return render(request, 'create_post.html', context)
+
+def about(request):
+    return render(request, 'about.html')
