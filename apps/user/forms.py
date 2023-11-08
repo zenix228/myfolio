@@ -11,7 +11,7 @@ class UserRegistrationForm(forms.ModelForm):
 
     class Meta:
         model = CustomUser
-        fields = ['username', 'icon', 'about']
+        fields = ['username']
         help_texts = {
             'username': None,
         }

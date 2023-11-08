@@ -25,9 +25,17 @@
                     <li><a href="{% url 'create' %}">Create</a></li>
                     <li><a href="{% url 'post' %}">Posts</a></li>
                     <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'register' %}">Sign up</a></li>
                 </ul>
             </nav>
         </header>
+        {% block content %}
+            {% for post in posts %}
+                <div class="container">
+                    <a href="{{post.id}}/"><img class="postimg" src="{{ post.image.url }}" alt="post"/></a>
+                </div>
+            {% endfor %}
+        {% endblock %}
     </div>
 </body>
 </html>

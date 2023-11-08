@@ -78,22 +78,47 @@ nav ul li:hover > ul {
 
 
 .log {
-  text-align: center;
-  padding-top: 200px;
-  font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
+	width: 350px;
+	height: 500px;
+	background: red;
+	overflow: hidden;
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+  margin-left: 540px;
+  margin-top: 140px;
 }
 
-#loginout {
-  text-align: center;
-  padding: 10px;
-  padding-top: 20px;
-  font-size: 32px;
+#signup {
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
 }
+
 
 #btn {
-  padding-top: 20px;
-  text-align: center;
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
 }
 
 #text_login {
@@ -169,9 +194,8 @@ nav ul li:hover > ul {
 .postimg {
   transition: 0.3s;
   border-radius: 10px;
-  width: 98%;
-  margin: 5px 0 5px 0;
-  float: left;
+  width: 200px;
+  height: 200px;
 }
 
 .postimg:hover{
@@ -239,8 +263,9 @@ nav ul li:hover > ul {
 .postimg1 {
   border-radius: 20px;
   transition: 0.3s;
-  height: 400px;
-  width: auto;
+  width: 400px;
+  height: 600px;
+  margin-right: 1200px;
 }
 
 .postimg1:hover{
@@ -251,20 +276,26 @@ nav ul li:hover > ul {
 
 
 .post_detail h4 {
-  padding: 8px;
+  padding-top: 8px;
+  width: 20px;
+  color: #573b8a;
+  font-family: 'Ubuntu', sans-serif; font-weight:normal;
 }
 
 
 
 .post_detail h3 {
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 600;
+  font-weight: 600px;
   color: rgb(0, 0, 0);
   font-size: 36px;
-  padding-bottom: 30px;
+  margin-right: 400px;
+  margin-top: -600px;
 }
 
 .post_detail p {
+  padding: 20px;
   color: rgb(152, 10, 10);
-  margin-top: 20px;
+  margin-right: 440px;
+  margin-top: 0px;
 }

@@ -49,4 +49,7 @@ def register(request):
     }
     return render(request, 'user/register.html', context)
 
+def register_done(request):
+    return render(request, 'user/register_done.html')
+
 

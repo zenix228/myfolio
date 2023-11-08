@@ -1,12 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 {% load static %}
 {% block content %}
 
     <div class="post_detail">
         <a href="{{ post.image.url }}"><img class="postimg1" src="{{ post.image.url }}" alt="post"/></a>
         <h3>{{ post.title }}</h3>
-        <h6>{{ post.created }}</h6>
-        <h4>{{ post.description|truncatechars:50 }}</h4>
+        <h4>{{ post.description|linebreaks }}</h4>
         <p>by {{ post.author }}</p>
     </div>
 

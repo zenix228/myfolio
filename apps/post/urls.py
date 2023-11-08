@@ -4,7 +4,7 @@ from apps.post.views import *
 
 urlpatterns = [
     path('', post, name='post'),
-    path('post_detail/<pk>/', post_detail, name='post_detail'),
+    path('<int:pk>/', post_detail, name='post_detail'),
     path('create/', create, name='create'),
     path('about/', about, name='about')
 ]

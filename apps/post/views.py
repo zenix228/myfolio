@@ -5,12 +5,12 @@ from django.contrib.auth.decorators import login_required
 from .forms import *
 
 def home(request):
-    return render(request, 'base.html')
+    return render(request, 'home.html')
 
 def post(request):
-    post = Post.objects.all()
+    posts = Post.objects.all()
     context = {
-        'posts': post
+        'posts': posts
     }
     return render(
         request,
