@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    {% block links %}
-    {% endblock links %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>
         {% block title %}
@@ -25,7 +23,8 @@
                     <li><a href="{% url 'create' %}">Create</a></li>
                     <li><a href="{% url 'post' %}">Posts</a></li>
                     <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'register' %}">Sign up</a></li>
+                    <li style="padding-left: 810px ;"><a href="{% url 'login' %}">Login</a></li>
+                    <li><a id="register" href="{% url 'register' %}">Sign up</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,6 +35,6 @@
                 </div>
             {% endfor %}
         {% endblock %}
-    </div>
+    </div>  
 </body>
 </html>

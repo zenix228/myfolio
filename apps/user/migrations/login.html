@@ -11,8 +11,8 @@
                 If you don't have an account, please <a id="signup" href="{% url 'register' %}">sign up</a>
                 <div class="reggg">
                     <form action="" method="post">
-                        {{ form.as_p }}
                         {% csrf_token %}
+                        {{ form.as_p }}
                         <input type="hidden" name="next" value="{{ next }}">
                         <p id="btn">
                             <a href="{% url 'register_done' %}">

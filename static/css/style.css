@@ -40,6 +40,8 @@ header nav ul li {
   transition: .2s;
 }
 
+
+
 header nav ul li a {
   padding: 15px;
   color: white;
@@ -277,8 +279,8 @@ nav ul li:hover > ul {
 
 .post_detail h4 {
   padding-top: 8px;
-  width: 20px;
-  color: #573b8a;
+  margin-left: 440px;
+  max-width: 100px;
   font-family: 'Ubuntu', sans-serif; font-weight:normal;
 }
 

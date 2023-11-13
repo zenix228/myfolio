@@ -22,7 +22,7 @@ def user_login(request):
     context = {
         'form': form
     }
-    return render(request, 'user/login.html', context)
+    return render(request, 'registration/login.html', context)
 
 def register(request):
     if request.method == 'POST':
@@ -38,7 +38,7 @@ def register(request):
             }
             return render(
                 request,
-                'user/register_done.html',
+                'registration/register_done.html',
                 context
             )
 
@@ -47,9 +47,6 @@ def register(request):
     context = {
         'user_form': user_form
     }
-    return render(request, 'user/register.html', context)
-
-def register_done(request):
-    return render(request, 'user/register_done.html')
+    return render(request, 'registration/register.html', context)
 
 
