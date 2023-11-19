@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.contrib.auth import login, authenticate
 from .forms import LoginForm, UserRegistrationForm
 from django.http import HttpResponse
@@ -12,7 +12,8 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return HttpResponse('Successful authentication')
+                    return redirect('/')
+                
                 else:
                     return HttpResponse('Account does not exist')
             else:

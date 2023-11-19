@@ -14,7 +14,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(42, 40, 40);
+  background-color: rgb(109, 78, 0);
   display: flex;
   justify-content:
   space-between;
@@ -31,7 +31,7 @@ header .logo {
 
 header .logo:hover {
   transform: scale(1.2);
-  color:  rgb(237, 138, 138);
+  color:  rgb(0, 0, 0);
 }
 
 header nav ul li {
@@ -50,8 +50,16 @@ header nav ul li a {
   transition: .2s;
 }
 
+header nav ul li a .sign_up {
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  display: block;
+  transition: .2s;
+}
+
 header nav ul li a:hover {
-  background-color: rgb(237, 138, 138);
+  background-color: rgb(0, 0, 0);
   color: rgb(152, 10, 10);
 }
 
@@ -60,7 +68,7 @@ nav ul li ul {
   left: 0;
   width: 180px;
   color: white;
-  background-color: rgb(42, 40, 40);
+  background-color: rgb(152, 110, 6);
   display: none;
 }
 
